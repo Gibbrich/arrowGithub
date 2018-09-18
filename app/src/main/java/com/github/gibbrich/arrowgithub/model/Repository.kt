@@ -1,0 +1,23 @@
+package com.github.gibbrich.arrowgithub.model
+
+import com.google.gson.annotations.SerializedName
+
+data class Repository(
+        @SerializedName("id")
+        val id: Long,
+
+        @SerializedName("name")
+        val name: String,
+
+        @SerializedName("description")
+        val description: String,
+
+        @SerializedName("owner")
+        val owner: User,
+
+        @SerializedName("forks_count")
+        val forksCount: Int,
+
+        @SerializedName("stargazers_count")
+        val stargazersCount: Int
+)
